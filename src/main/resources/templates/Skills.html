@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <!-- Tailwind CSS CDN - used for basic utilities like flex, grid, spacing -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css1?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body class="font-inter">
+
+    <div class="container mx-auto px-4 py-8 max-w-5xl">
+        <header class="text-center mb-11 py-4">
+            <h1 class="portfolio-title">My Portfolio</h1>
+            <nav class="portfolio-nav">
+                <a href="/index" class="nav-link">About Me</a>
+                <a href="/Skills" class="nav-link">Skills</a>
+                <a href="/Grades" class="nav-link">Grades</a>
+                <a href="/Journal" class="nav-link">Journal</a>
+            </nav>
+        </header>
+
+
+        <main id="content-container">
+                <section id="skills" class="portfolio-section hidden">
+                    <h1 class="section-header">Skills</h1>
+                    <div class="skills-grid">
+                    <div class="skill-item">Billiards</div>
+                    <div class="skill-item">Cooking</div>
+                    <div class="skill-item">Critical Thinking</div>
+                    <div class="skill-item">Drawing</div>
+                    <div class="skill-item">Painting</div>
+                    <div class="skill-item">Playing Guitar</div>
+                    <div class="skill-item">Volleyball</div>
+                    <div class="skill-item">Singing</div>
+                    <div class="skill-item">Coding</div>
+                    <div class="skill-item">Web Designing</div>
+                    <div class="skill-item">Public Speaking</div>
+                    <div class="skill-item">Playing CODM</div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+</body>
+</html>

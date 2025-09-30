@@ -1,0 +1,305 @@
+/* style.css */
+
+/* General Body and Scrollbar Styles */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #FFECF4; /* A light, soft pink background */
+    color: #4A4A4A; /* Darker gray for readability on pink */
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #F8D7E3; /* Slightly darker pink track */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #E898A1; /* Muted pink thumb */
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #D97E87; /* Darker pink on hover */
+}
+
+/* Utility Class (from previous version) */
+/* The `hidden` class comes directly from Tailwind CSS. */
+
+/* Container for overall layout */
+.container {
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem 1rem;
+}
+
+/* Header and Navigation Styles */
+header {
+    text-align: center;
+    margin-bottom: 3rem;
+    padding: 1rem 0;
+}
+
+.portfolio-title {
+    font-size: 3.5rem;
+    font-weight: 800;
+    color: #B4527F; /* Deep berry pink for title */
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background-color: #FFF0F5; /* Very light pink background for title */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio-nav {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 1rem;
+    background-color: #FFF0F5; /* Very light pink background for nav */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    border-radius: 8px;
+}
+
+.portfolio-nav a {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #6C5B7B; /* Muted purple for links */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.portfolio-nav a:hover {
+    color: #B4527F; /* Deep berry pink on hover */
+}
+
+/* General Section Styles */
+.portfolio-section {
+    background-color: #FFFFFF; /* White background for sections */
+    padding: 2rem;
+    margin-bottom: 3rem;
+    border-radius: 12px; /* Slightly more rounded corners */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12); /* More prominent shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.portfolio-section:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+
+.section-header {
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #B4527F; /* Deep berry pink for headers */
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid #E898A1; /* Muted pink border */
+}
+
+/* Personal Information Section */
+.personal-info-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .personal-info-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}
+
+.profile-pic-container {
+    flex-shrink: 0;
+}
+
+.profile-pic {
+    width: 144px;
+    height: 144px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #E898A1; /* Muted pink border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.personal-details .name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #B4527F; /* Deep berry pink */
+    margin-bottom: 0.5rem;
+}
+
+.personal-details .title {
+    font-size: 1.25rem;
+    color: #C185A1; /* Softer pink for title */
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.contact-info {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    font-size: 1.125rem;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+    .contact-info {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .contact-info p:last-child {
+        grid-column: span 2;
+    }
+}
+
+.contact-info a {
+    color: #B4527F; /* Deep berry pink for links */
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.about-me-header {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #B4527F; /* Deep berry pink */
+    margin-bottom: 0.75rem;
+}
+
+.about-me-text {
+    color: #555;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); /* Slightly wider skill items */
+    gap: 1.25rem; /* Increased gap */
+    text-align: center;
+}
+
+.skill-item {
+    background-color: #FFEBEE; /* Very light pink */
+    padding: 1.25rem; /* Increased padding */
+    border-radius: 8px; /* Slightly more rounded */
+    font-size: 1.125rem;
+    font-weight: 600; /* Bolder text */
+    color: #884A4A; /* Darker reddish-pink */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.skill-item:hover {
+    background-color: #FDDDE6; /* Slightly darker pink on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px); /* Slight lift */
+}
+
+/* Grades Section */
+.grades-table-container {
+    overflow-x: auto;
+}
+
+.grades-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grades-table th, .grades-table td {
+    padding: 0.9rem 1.8rem; /* Increased padding */
+    text-align: left;
+    border-bottom: 1px solid #F0D0D9; /* Light pink border */
+}
+
+.grades-table th {
+    background-color: #B4527F; /* Deep berry pink header */
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.grades-table th:first-child {
+    border-top-left-radius: 12px;
+}
+.grades-table th:last-child {
+    border-top-right-radius: 12px;
+}
+
+.grades-table tbody tr {
+    color: #555;
+    font-size: 0.9rem; /* Slightly larger text */
+    font-weight: 400;
+}
+
+.grades-table tbody tr:hover {
+    background-color: #FFF5F7; /* Very light pink on hover */
+}
+
+.grades-table td:last-child {
+    text-align: center;
+}
+
+/* Journal Section */
+.journal-entries {
+    display: grid;
+    gap: 2rem;
+}
+
+.journal-entry {
+    background-color: #FFFAFC; /* Almost white, very light pink */
+    padding: 1.8rem; /* Increased padding */
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+    border: 1px solid #F0D0D9; /* Light pink border */
+    transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.journal-entry:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px); /* Slight lift */
+}
+
+.entry-title {
+    font-size: 1.6rem; /* Slightly larger title */
+    font-weight: 700;
+    color: #B4527F; /* Deep berry pink */
+    margin-bottom: 0.6rem;
+}
+
+.entry-date {
+    color: #884A4A; /* Darker reddish-pink */
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+}
+
+.entry-text {
+    color: #555;
+}
+
+/* Footer Styles */
+.portfolio-footer {
+    text-align: center;
+    color: #884A4A; /* Darker reddish-pink for footer */
+    font-size: 0.9rem;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #E898A1; /* Muted pink border */
+}

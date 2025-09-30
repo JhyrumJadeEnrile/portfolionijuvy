@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <!-- Tailwind CSS CDN - used for basic utilities like flex, grid, spacing -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css1?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/style.css}">
+
+</head>
+<body class="font-inter">
+
+<div class="container mx-auto px-4 py-8 max-w-5xl">
+
+    <!-- Header -->
+    <header class="text-center mb-11 py-4">
+        <h1 class="portfolio-title">My Portfolio</h1>
+        <nav class="portfolio-nav">
+            <!-- Added 'nav-link' class for JavaScript targeting -->
+            <a href="/index" class="nav-link">About Me</a>
+            <a href="/Skills" class="nav-link">Skills</a>
+            <a href="/Grades" class="nav-link">Grades</a>
+            <a href="/Journal" class="nav-link">Journal</a>
+        </nav>
+    </header>
+
+
+    <main id="content-container">
+        <section id="grades" class="portfolio-section hidden">
+            <h1 class="section-header">Academic Grades</h1>
+            <div class="grades-table-container">
+                <table>
+                    <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Grade</th>
+                    </tr>
+                    </thead>
+                    <tbody class="grades-table">
+                    <tr>
+                        <td>Engineering Drawing and Plans (lab)</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Ethics</td>
+                        <td>1.5</td>
+                    </tr>
+                    <tr>
+                        <td>Fundamental of Mathematics for Technical Teacher</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>General Chemistry (lab)</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>General Chemistry (lec)</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Introduction to Computing</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Understanding the Self</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Purposive Communication</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>National Service Training Program 1 (LTS1)</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Physical Activities Towards Health and Fitness 1: Movement & Competency Training</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>The Contemporary World</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Environmental Science (Free Elective)</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Computer Programming 1 (lab)</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Computer Programming 1 (lec)</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>National Service Training Program 2 (LTS2)</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Physical Activities Towards Health and Fitness 2: Exercise-based Fitness Activities</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>General Physics (lab)</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>General Physics (lec)</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Introduction to Industrial Arts</td>
+                        <td>1</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+</div>
+
+
+</body>
+</html>

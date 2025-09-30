@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <!-- Tailwind CSS CDN - used for basic utilities like flex, grid, spacing -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css1?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body class="font-inter">
+
+    <div class="container mx-auto px-4 py-8 max-w-5xl">
+
+        <!-- Header -->
+        <header class="text-center mb-11 py-4">
+            <h1 class="portfolio-title">My Portfolio</h1>
+            <nav class="portfolio-nav">
+                <a href="/index" class="nav-link">About Me</a>
+                <a href="/Skills" class="nav-link">Skills</a>
+                <a href="/Grades" class="nav-link">Grades</a>
+                <a href="/Journal" class="nav-link">Journal</a>
+            </nav>
+        </header>
+
+        
+        <main id="content-container">
+            <!-- Each section has 'portfolio-section' class and initial 'hidden' for all but the first -->
+            <section id="personal-info" class="portfolio-section">
+                <h1 class="section-header">Personal Information</h1>
+                <div class="personal-info-content">
+                    <div class="profile-pic-container">
+                        <!-- Placeholder image for profile picture -->
+                        <img src="../static/480437099_1685988548938829_4516877215508464008_n.jpg" alt="Profile Picture" class="profile-pic">
+                    </div>
+                    <div class="personal-details">
+                        <h3 class="name">Juvilyn Awit Rebutar</h3>
+                        <p class="title">Student | BTVTE-ICT-CP</p>
+
+                        <div class="contact-info">
+                            <p><strong>Location:</strong> Taguig, Metro Manila, Philippines</p>
+                            <p><strong>Email:</strong> juvilynawitrebutar@tup.edu.ph</p>
+                            <p><strong>Phone:</strong> +63 994 103 5441</p>
+                            <p>
+                                <strong>Address:</strong>
+                                Taguig, Philippines
+                            </p>
+                        </div>
+
+                        <h4 class="about-me-header">Bio</h4>
+                        <p class="about-me-text">
+                            Hi there! My name is Juvilyn Awit Rebutar, and I'm currently pursuing my Bachelor of Technology and Vocational Teacher Education (BTVTE) with a specialization in Information and Communications Technology - Computer Programming at TUP Taguig. I'm passionate about combining creativity with technology, constantly seeking ways to build engaging and functional web experiences. I thrive on learning new skills and challenging myself with complex problems. Based in Taguig, Metro Manila, I'm excited to contribute my skills and enthusiasm to the world of web development.
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    
+</body>
+</html>

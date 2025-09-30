@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <!-- Tailwind CSS CDN - used for basic utilities like flex, grid, spacing -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css1?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" th:href="@{/style.css}">
+</head>
+<body class="font-inter">
+
+<div class="container mx-auto px-4 py-8 max-w-5xl">
+    <header class="text-center mb-11 py-4">
+        <h1 class="portfolio-title">My Portfolio</h1>
+        <nav class="portfolio-nav">
+            <a href="/index" class="nav-link">About Me</a>
+            <a href="/Skills" class="nav-link">Skills</a>
+            <a href="/Grades" class="nav-link">Grades</a>
+            <a href="/Journal" class="nav-link">Journal</a>
+        </nav>
+    </header>
+
+
+    <main id="content-container">
+        <section id="journal" class="portfolio-section hidden">
+            <h1 class="section-header">Journal</h1>
+            <div class="journal-entries">
+                <article class="journal-entry">
+                    <h3 class="entry-title">About me</h3>
+                    <p class="entry-text">
+                    </p>
+                    <p class="entry-text">
+                        My skills span a diverse range of creative and analytical disciplines. In the realm of art and design, I possess abilities in drawing, painting, and digital illustration, allowing me to translate concepts into compelling visuals. My proficiency extends to web design, where I focus on creating intuitive and aesthetically pleasing user interfaces and experiences. Beyond the visual arts, I engage in coding, building a foundational understanding of the technical aspects of web development. I also enjoy playing the guitar and singing, finding creative expression through music. In the analytical and strategic domain, my critical thinking skills are honed through activities like playing billiards and competitive online gaming (CODM). My physical skills include playing volleyball, reflecting a commitment to teamwork and athleticism. Finally, I have developed public speaking skills, enabling me to articulate my ideas effectively and engage with others confidently. This blend of creative, technical, analytical, and interpersonal skills allows me to approach projects with a well-rounded perspective.
+                    </p>
+                </article>
+            </div>
+        </section>
+    </main>
+</div>
+</body>
+</html>
